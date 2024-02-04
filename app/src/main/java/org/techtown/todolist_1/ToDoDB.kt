@@ -6,7 +6,6 @@ import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
-//
 class ToDoDB(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
 
     private var db: SQLiteDatabase? = null
@@ -80,7 +79,7 @@ class ToDoDB(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, 
     }
 
     // 할일 수정
-    fun updateStatus(id: Int, task: String) {
+    fun updateTask(id: Int, task: String) {
         openDatabase()
         val cv = ContentValues()
         cv.put(TASK, task)
@@ -88,7 +87,7 @@ class ToDoDB(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, 
     }
 
     // 할일 삭제
-    fun updateStatus(id: Int) {
+    fun deleteTask(id: Int) {
         openDatabase()
         db!!.delete(TABLE_NAME, "id=?", arrayOf(id.toString()))
     }

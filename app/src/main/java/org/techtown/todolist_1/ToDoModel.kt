@@ -5,6 +5,4 @@ data class ToDoModel(
     var id: Int,
     var task: String, // 할일
     var status: Int, // 체크상태
-
-
 )
