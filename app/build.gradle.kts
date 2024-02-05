@@ -47,5 +47,4 @@ dependencies {
 
     // 추가 - 스와이프 기능 - 할일 삭제 및 수정에 필요함
     implementation("com.github.xabaras:RecyclerViewSwipeDecorator:1.4")
-    
 }

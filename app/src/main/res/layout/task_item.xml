@@ -9,9 +9,11 @@
     android:layout_marginHorizontal="16dp"
     >
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/holo_red_light"
         android:padding="8dp">
 
         <CheckBox
@@ -20,7 +22,7 @@
             android:layout_height="wrap_content"
             android:buttonTint="@android:color/holo_green_dark"
             android:text="This is Sample Task"/>
-    </RelativeLayout>
+    </LinearLayout>
 
 
 
